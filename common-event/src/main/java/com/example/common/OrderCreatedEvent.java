@@ -1,5 +1,8 @@
 package com.example.common;
 
+
+import lombok.*;
+
 @Getter
 @Setter
 @NoArgsConstructor
