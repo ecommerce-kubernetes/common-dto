@@ -15,4 +15,5 @@ public class UserCacheDeductedEvent {
     private boolean pointUsage;
     private int reservedPointAmount;
     private int reservedCacheAmount;
+    private int expectTotalAmount;
 }
