@@ -9,8 +9,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class UserCacheFailedEvent {
+public class CouponUsedSuccessEvent {
     private Long orderId;
-    private Long userId;
-    private String reason;
+    private Long userCouponId;
+    private DiscountType discountType;
+    private int discountValue;
+    private int minPurchaseAmount;
+    private int maxPurchaseAmount;
 }

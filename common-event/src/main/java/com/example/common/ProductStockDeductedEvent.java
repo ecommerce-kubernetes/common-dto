@@ -5,13 +5,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CouponUseReserveEvent {
+public class ProductStockDeductedEvent {
     private Long orderId;
-    private Long userId;
-    private Long userCouponId;
-    private Integer reservedCacheAmount;
+    private List<Product> productList;
 }

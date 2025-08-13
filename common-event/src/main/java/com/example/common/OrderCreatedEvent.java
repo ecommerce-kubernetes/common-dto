@@ -3,6 +3,8 @@ package com.example.common;
 
 import lombok.*;
 
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -12,6 +14,10 @@ public class OrderCreatedEvent {
     private Long orderId;
     private Long userId;
     private Long userCouponId;
-    private Integer reservedCacheAmount;
+    private List<Product> productList;
+    private boolean pointUsage;
+    private int reservedPointAmount;
+    private int reservedCacheAmount;
+    private int expectTotalAmount;
 
 }

@@ -9,8 +9,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class UserCacheCancelEvent {
+public class UserCacheDeductedEvent {
+    private Long orderId;
     private Long userId;
-    private Integer reservedCacheAmount;
-
+    private boolean pointUsage;
+    private int reservedPointAmount;
+    private int reservedCacheAmount;
 }
