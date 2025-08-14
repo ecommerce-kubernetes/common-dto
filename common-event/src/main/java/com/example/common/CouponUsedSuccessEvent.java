@@ -12,8 +12,8 @@ import lombok.NoArgsConstructor;
 public class CouponUsedSuccessEvent {
     private Long orderId;
     private Long userCouponId;
-    private String discountType;
+    private DiscountType discountType;
     private int discountValue;
     private int minPurchaseAmount;
-    private int maxPurchaseAmount;
+    private int maxDiscountAmount;
 }
