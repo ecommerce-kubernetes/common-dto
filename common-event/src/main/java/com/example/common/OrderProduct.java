@@ -6,8 +6,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Product {
+public class OrderProduct {
     private Long productVariantId;
     private int stock;
-    private int discountPrice;
 }

@@ -13,5 +13,5 @@ import java.util.List;
 @Builder
 public class ProductStockDeductedEvent {
     private Long orderId;
-    private List<Product> productList;
+    private List<DeductedProduct> deductedProducts;
 }

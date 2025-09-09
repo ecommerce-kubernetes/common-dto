@@ -14,7 +14,7 @@ public class OrderCreatedEvent {
     private Long orderId;
     private Long userId;
     private Long userCouponId;
-    private List<Product> productList;
+    private List<OrderProduct> orderProductList;
     private boolean pointUsage;
     private int reservedPointAmount;
     private int reservedCacheAmount;
