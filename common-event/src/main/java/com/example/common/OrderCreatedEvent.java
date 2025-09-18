@@ -17,7 +17,7 @@ public class OrderCreatedEvent {
     private List<OrderProduct> orderProductList;
     private boolean pointUsage;
     private int reservedPointAmount;
-    private int reservedCacheAmount;
+    private int reservedCashAmount;
     private int expectTotalAmount;
 
 }

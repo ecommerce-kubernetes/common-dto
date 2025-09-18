@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8a51e14-c8f7-47ba-9031-7b5ee3b8a2af" name="변경" comment="">
+    <list default="true" id="a8a51e14-c8f7-47ba-9031-7b5ee3b8a2af" name="변경" comment="2.0.3 버전">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/common/SuccessSagaEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/common/CouponUsedSuccessEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/common/CouponUsedSuccessEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/common/OrderCreatedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/common/OrderCreatedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/common/ProductStockDeductedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/common/ProductStockDeductedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/common/UserCacheDeductedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/common/UserCashDeductedEvent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +43,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -84,7 +90,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="" name="Changes" comment="" />
+      <changelist id="a8a51e14-c8f7-47ba-9031-7b5ee3b8a2af" name="변경" comment="2.0.3 버전" />
       <created>1754465440726</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -98,11 +104,20 @@
       <option name="project" value="LOCAL" />
       <updated>1756287653394</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2.0.3 버전">
+      <option name="closed" value="true" />
+      <created>1757774895230</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1757774895230</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.0.3 릴리즈" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0.3 릴리즈" />
+    <MESSAGE value="2.0.3 버전" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.0.3 버전" />
   </component>
 </project>

@@ -9,11 +9,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class UserCacheDeductedEvent {
+public class UserCashDeductedEvent implements SuccessSagaEvent{
     private Long orderId;
     private Long userId;
     private boolean pointUsage;
     private int reservedPointAmount;
-    private int reservedCacheAmount;
+    private int reservedCashAmount;
     private int expectTotalAmount;
 }

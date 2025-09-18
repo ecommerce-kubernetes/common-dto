@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CouponUsedSuccessEvent {
+public class CouponUsedSuccessEvent implements SuccessSagaEvent{
     private Long orderId;
     private Long userCouponId;
     private DiscountType discountType;

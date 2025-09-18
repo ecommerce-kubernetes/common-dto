@@ -11,7 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ProductStockDeductedEvent {
+public class ProductStockDeductedEvent implements SuccessSagaEvent{
     private Long orderId;
     private List<DeductedProduct> deductedProducts;
 }
