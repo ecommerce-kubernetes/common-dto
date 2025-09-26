@@ -10,7 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class PriceInfo {
-    private int price;
+    private long unitPrice;
     private int discountRate;
     private long discountAmount;
     private long finalPrice;

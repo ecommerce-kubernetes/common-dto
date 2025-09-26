@@ -16,8 +16,7 @@ public class OrderCreatedEvent {
     private Long userCouponId;
     private List<OrderProduct> orderProductList;
     private boolean pointUsage;
-    private int reservedPointAmount;
-    private int reservedCashAmount;
-    private int expectTotalAmount;
-
+    private long reservedPointAmount;
+    private long reservedCashAmount;
+    private long expectTotalAmount;
 }

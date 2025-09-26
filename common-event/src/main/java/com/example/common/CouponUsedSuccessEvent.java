@@ -13,7 +13,7 @@ public class CouponUsedSuccessEvent implements SuccessSagaEvent{
     private Long orderId;
     private Long userCouponId;
     private DiscountType discountType;
-    private int discountValue;
-    private int minPurchaseAmount;
-    private int maxDiscountAmount;
+    private long discountValue;
+    private long minPurchaseAmount;
+    private long maxDiscountAmount;
 }

@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8a51e14-c8f7-47ba-9031-7b5ee3b8a2af" name="변경" comment="2.0.3 버전">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/common/SuccessSagaEvent.java" afterDir="false" />
+    <list default="true" id="a8a51e14-c8f7-47ba-9031-7b5ee3b8a2af" name="변경" comment="2.0.5 버전">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/common/CouponUsedSuccessEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/common/CouponUsedSuccessEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/common/DeductedProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/common/DeductedProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/common/OrderCreatedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/common/OrderCreatedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/common/ProductStockDeductedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/common/ProductStockDeductedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/common/UserCacheDeductedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/common/UserCashDeductedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/common/PriceInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/common/PriceInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

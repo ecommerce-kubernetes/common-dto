@@ -12,11 +12,7 @@ import java.util.List;
 @Getter
 @Setter
 public class DeductedProduct {
-    private Long productId;
     private Long productVariantId;
-    private String productName;
-    private String thumbnail;
-    private PriceInfo priceInfo;
     private int quantity;
     private List<ItemOption> options;
 }
