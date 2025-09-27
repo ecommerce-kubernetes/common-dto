@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -14,5 +13,4 @@ import java.util.List;
 public class DeductedProduct {
     private Long productVariantId;
     private int quantity;
-    private List<ItemOption> options;
 }

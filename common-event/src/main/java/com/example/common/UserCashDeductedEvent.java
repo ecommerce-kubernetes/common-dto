@@ -13,7 +13,7 @@ public class UserCashDeductedEvent implements SuccessSagaEvent{
     private Long orderId;
     private Long userId;
     private boolean pointUsage;
-    private int reservedPointAmount;
-    private int reservedCashAmount;
-    private int expectTotalAmount;
+    private long reservedPointAmount;
+    private long reservedCashAmount;
+    private long expectTotalAmount;
 }
