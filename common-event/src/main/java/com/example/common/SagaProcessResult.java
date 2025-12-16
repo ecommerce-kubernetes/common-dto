@@ -1,5 +1,6 @@
 package com.example.common;
 
+import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,7 @@ public class SagaProcessResult {
     private String errorCode;
     private String failureReason;
 
-    @Builder
+    @Builder(access = AccessLevel.PRIVATE)
     private SagaProcessResult(Long sagaId, Long orderId, SagaStatus status, String errorCode, String failureReason) {
         this.sagaId = sagaId;
         this.orderId = orderId;
@@ -31,6 +32,9 @@ public class SagaProcessResult {
     }
 
     public static SagaProcessResult fail(Long sagaId, Long orderId, String errorCode, String failureReason) {
+        if(failureReason == null || failureReason.isEmpty()){
+            throw new IllegalArgumentException("실패 메시지 생성시 실패 이유는 필수값입니다");
+        }
         return SagaProcessResult.builder()
                 .sagaId(sagaId)
                 .orderId(orderId)
