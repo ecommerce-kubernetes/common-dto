@@ -13,30 +13,23 @@ public class CouponUseRequest {
     private Long orderId;
     private Long userId;
     private Long couponId;
-    private Long orderSubtotal;
-    private Long discountAmount;
     private LocalDateTime timestamp;
 
     @Builder
-    private CouponUseRequest(Long sagaId, Long orderId, Long userId, Long couponId, Long orderSubtotal, Long discountAmount, LocalDateTime timestamp) {
+    private CouponUseRequest(Long sagaId, Long orderId, Long userId, Long couponId, LocalDateTime timestamp) {
         this.sagaId = sagaId;
         this.orderId = orderId;
         this.userId = userId;
         this.couponId = couponId;
-        this.orderSubtotal = orderSubtotal;
-        this.discountAmount = discountAmount;
         this.timestamp = timestamp;
     }
 
-    public static CouponUseRequest of(Long sagaId, Long orderId, Long userId, Long couponId, Long orderSubtotal,
-                                      Long discountAmount, LocalDateTime timestamp) {
+    public static CouponUseRequest of(Long sagaId, Long orderId, Long userId, Long couponId, LocalDateTime timestamp) {
         return CouponUseRequest.builder()
                 .sagaId(sagaId)
                 .orderId(orderId)
                 .userId(userId)
                 .couponId(couponId)
-                .orderSubtotal(orderSubtotal)
-                .discountAmount(discountAmount)
                 .timestamp(timestamp)
                 .build();
     }

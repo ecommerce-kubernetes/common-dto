@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8a51e14-c8f7-47ba-9031-7b5ee3b8a2af" name="변경" comment="새 데이터모델 생성">
+    <list default="true" id="a8a51e14-c8f7-47ba-9031-7b5ee3b8a2af" name="변경" comment="SagaProcessResult 생성 제약 구현">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/common/SagaProcessResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/common/SagaProcessResult.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,13 +124,22 @@
       <option name="project" value="LOCAL" />
       <updated>1765881241606</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="SagaProcessResult 생성 제약 구현">
+      <option name="closed" value="true" />
+      <created>1765884892487</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765884892487</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.0.3 릴리즈" />
     <MESSAGE value="2.0.3 버전" />
     <MESSAGE value="새 데이터모델 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="새 데이터모델 생성" />
+    <MESSAGE value="SagaProcessResult 생성 제약 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="SagaProcessResult 생성 제약 구현" />
   </component>
 </project>
