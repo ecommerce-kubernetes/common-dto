@@ -2,8 +2,10 @@ package com.example.common;
 
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Getter
+@NoArgsConstructor
 public class SagaProcessResult {
     private Long sagaId;
     private Long orderId;
