@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8a51e14-c8f7-47ba-9031-7b5ee3b8a2af" name="변경" comment="SagaProcessResult 생성 제약 구현">
+    <list default="true" id="a8a51e14-c8f7-47ba-9031-7b5ee3b8a2af" name="변경" comment="CouponCompensateRequest 변경">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/common/SagaProcessResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/common/SagaProcessResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/common/SagaStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/common/SagaEventStatus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,19 +67,19 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.common-event.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "temp",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/choiminsik/Desktop/msa-ecommerce/common-dto/common-event/build.gradle",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.common-event.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;temp&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/choiminsik/Desktop/msa-ecommerce/common-dto/common-event/build.gradle&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.common" />
@@ -132,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765884892487</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="CouponCompensateRequest 변경">
+      <option name="closed" value="true" />
+      <created>1765898086370</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1765898086370</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -140,6 +150,7 @@
     <MESSAGE value="2.0.3 버전" />
     <MESSAGE value="새 데이터모델 생성" />
     <MESSAGE value="SagaProcessResult 생성 제약 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="SagaProcessResult 생성 제약 구현" />
+    <MESSAGE value="CouponCompensateRequest 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="CouponCompensateRequest 변경" />
   </component>
 </project>

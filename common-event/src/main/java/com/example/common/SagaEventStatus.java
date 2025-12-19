@@ -3,7 +3,7 @@ package com.example.common;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-public enum SagaStatus {
+public enum SagaEventStatus {
     SUCCESS("성공"),
     FAIL("실패");
 
