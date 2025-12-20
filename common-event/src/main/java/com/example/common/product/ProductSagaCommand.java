@@ -1,4 +1,4 @@
-package com.example.common;
+package com.example.common.product;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -9,7 +9,8 @@ import java.util.List;
 
 @Getter
 @NoArgsConstructor
-public class InventoryDeductRequest {
+public class ProductSagaCommand {
+    private ProductCommandType type;
     private Long sagaId;
     private Long orderId;
     private Long userId;
@@ -17,7 +18,8 @@ public class InventoryDeductRequest {
     private LocalDateTime timestamp;
 
     @Builder
-    private InventoryDeductRequest(Long sagaId, Long orderId, Long userId, List<Item> items, LocalDateTime timestamp){
+    private ProductSagaCommand(ProductCommandType type, Long sagaId, Long orderId, Long userId, List<Item> items, LocalDateTime timestamp) {
+        this.type = type;
         this.sagaId = sagaId;
         this.orderId = orderId;
         this.userId = userId;
@@ -25,9 +27,9 @@ public class InventoryDeductRequest {
         this.timestamp = timestamp;
     }
 
-    public static InventoryDeductRequest of(Long sagaId, Long orderId, Long userId,
-                                            List<Item> items, LocalDateTime timestamp) {
-        return InventoryDeductRequest.builder()
+    public static ProductSagaCommand of(ProductCommandType type, Long sagaId, Long orderId, Long userId, List<Item> items, LocalDateTime timestamp){
+        return ProductSagaCommand.builder()
+                .type(type)
                 .sagaId(sagaId)
                 .orderId(orderId)
                 .userId(userId)

@@ -1,4 +1,4 @@
-package com.example.common;
+package com.example.common.coupon;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -8,7 +8,8 @@ import java.time.LocalDateTime;
 
 @Getter
 @NoArgsConstructor
-public class CouponUseRequest {
+public class CouponSagaCommand {
+    private CouponCommandType type;
     private Long sagaId;
     private Long orderId;
     private Long userId;
@@ -16,7 +17,8 @@ public class CouponUseRequest {
     private LocalDateTime timestamp;
 
     @Builder
-    private CouponUseRequest(Long sagaId, Long orderId, Long userId, Long couponId, LocalDateTime timestamp) {
+    private CouponSagaCommand(CouponCommandType type, Long sagaId, Long orderId, Long userId, Long couponId, LocalDateTime timestamp) {
+        this.type = type;
         this.sagaId = sagaId;
         this.orderId = orderId;
         this.userId = userId;
@@ -24,8 +26,9 @@ public class CouponUseRequest {
         this.timestamp = timestamp;
     }
 
-    public static CouponUseRequest of(Long sagaId, Long orderId, Long userId, Long couponId, LocalDateTime timestamp) {
-        return CouponUseRequest.builder()
+    public static CouponSagaCommand of(CouponCommandType type, Long sagaId, Long orderId, Long userId, Long couponId, LocalDateTime timestamp) {
+        return CouponSagaCommand.builder()
+                .type(type)
                 .sagaId(sagaId)
                 .orderId(orderId)
                 .userId(userId)

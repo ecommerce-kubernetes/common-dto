@@ -1,4 +1,4 @@
-package com.example.common;
+package com.example.common.product;
 
 import lombok.Builder;
 import lombok.Getter;
