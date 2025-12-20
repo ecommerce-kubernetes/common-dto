@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8a51e14-c8f7-47ba-9031-7b5ee3b8a2af" name="변경" comment="Enum 이름 변경">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/common/coupon/CouponCommandType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/common/coupon/CouponSagaCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/common/product/ProductCommandType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/common/product/ProductSagaCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/common/user/UserCommandType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/common/user/UserSagaCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/common/InventoryCompensateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/common/InventoryCompensateRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/common/InventoryDeductRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/common/InventoryDeductRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/common/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/common/product/Item.java" afterDir="false" />
-    </list>
+    <list default="true" id="a8a51e14-c8f7-47ba-9031-7b5ee3b8a2af" name="변경" comment="DTO 변경" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766131560002</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="DTO 변경">
+      <option name="closed" value="true" />
+      <created>1766241608982</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1766241608982</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -167,6 +164,7 @@
     <MESSAGE value="SagaProcessResult 생성 제약 구현" />
     <MESSAGE value="CouponCompensateRequest 변경" />
     <MESSAGE value="Enum 이름 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enum 이름 변경" />
+    <MESSAGE value="DTO 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="DTO 변경" />
   </component>
 </project>

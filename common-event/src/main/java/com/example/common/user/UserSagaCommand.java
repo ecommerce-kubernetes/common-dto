@@ -26,7 +26,7 @@ public class UserSagaCommand {
         this.timestamp = timestamp;
     }
 
-    public static UserSagaCommand of(UserCommandType type, Long sagaId, Long orderId, Long userId, Long usedPoint, String reason, LocalDateTime timestamp){
+    public static UserSagaCommand of(UserCommandType type, Long sagaId, Long orderId, Long userId, Long usedPoint, LocalDateTime timestamp){
         return UserSagaCommand.builder()
                 .type(type)
                 .sagaId(sagaId)
