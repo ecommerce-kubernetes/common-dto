@@ -11,26 +11,26 @@ import java.time.LocalDateTime;
 public class CouponSagaCommand {
     private CouponCommandType type;
     private Long sagaId;
-    private Long orderId;
+    private String orderNo;
     private Long userId;
     private Long couponId;
     private LocalDateTime timestamp;
 
     @Builder
-    private CouponSagaCommand(CouponCommandType type, Long sagaId, Long orderId, Long userId, Long couponId, LocalDateTime timestamp) {
+    private CouponSagaCommand(CouponCommandType type, Long sagaId, String orderNo, Long userId, Long couponId, LocalDateTime timestamp) {
         this.type = type;
         this.sagaId = sagaId;
-        this.orderId = orderId;
+        this.orderNo = orderNo;
         this.userId = userId;
         this.couponId = couponId;
         this.timestamp = timestamp;
     }
 
-    public static CouponSagaCommand of(CouponCommandType type, Long sagaId, Long orderId, Long userId, Long couponId, LocalDateTime timestamp) {
+    public static CouponSagaCommand of(CouponCommandType type, Long sagaId, String orderNo, Long userId, Long couponId, LocalDateTime timestamp) {
         return CouponSagaCommand.builder()
                 .type(type)
                 .sagaId(sagaId)
-                .orderId(orderId)
+                .orderNo(orderNo)
                 .userId(userId)
                 .couponId(couponId)
                 .timestamp(timestamp)

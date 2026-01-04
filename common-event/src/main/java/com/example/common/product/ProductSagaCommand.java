@@ -12,26 +12,26 @@ import java.util.List;
 public class ProductSagaCommand {
     private ProductCommandType type;
     private Long sagaId;
-    private Long orderId;
+    private String orderNo;
     private Long userId;
     private List<Item> items;
     private LocalDateTime timestamp;
 
     @Builder
-    private ProductSagaCommand(ProductCommandType type, Long sagaId, Long orderId, Long userId, List<Item> items, LocalDateTime timestamp) {
+    private ProductSagaCommand(ProductCommandType type, Long sagaId, String orderNo, Long userId, List<Item> items, LocalDateTime timestamp) {
         this.type = type;
         this.sagaId = sagaId;
-        this.orderId = orderId;
+        this.orderNo = orderNo;
         this.userId = userId;
         this.items = items;
         this.timestamp = timestamp;
     }
 
-    public static ProductSagaCommand of(ProductCommandType type, Long sagaId, Long orderId, Long userId, List<Item> items, LocalDateTime timestamp){
+    public static ProductSagaCommand of(ProductCommandType type, Long sagaId, String orderNo, Long userId, List<Item> items, LocalDateTime timestamp){
         return ProductSagaCommand.builder()
                 .type(type)
                 .sagaId(sagaId)
-                .orderId(orderId)
+                .orderNo(orderNo)
                 .userId(userId)
                 .items(items)
                 .timestamp(timestamp)

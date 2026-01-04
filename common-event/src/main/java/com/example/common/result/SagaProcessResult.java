@@ -9,32 +9,32 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class SagaProcessResult {
     private Long sagaId;
-    private Long orderId;
+    private String orderNo;
     private SagaEventStatus status;
     private String errorCode;
     private String failureReason;
 
     @Builder(access = AccessLevel.PRIVATE)
-    private SagaProcessResult(Long sagaId, Long orderId, SagaEventStatus status, String errorCode, String failureReason) {
+    private SagaProcessResult(Long sagaId, String orderNo, SagaEventStatus status, String errorCode, String failureReason) {
         this.sagaId = sagaId;
-        this.orderId = orderId;
+        this.orderNo = orderNo;
         this.status = status;
         this.errorCode = errorCode;
         this.failureReason = failureReason;
     }
 
-    public static SagaProcessResult success(Long sagaId, Long orderId) {
+    public static SagaProcessResult success(Long sagaId, String orderNo) {
         return SagaProcessResult.builder()
                 .sagaId(sagaId)
-                .orderId(orderId)
+                .orderNo(orderNo)
                 .status(SagaEventStatus.SUCCESS)
                 .build();
     }
 
-    public static SagaProcessResult fail(Long sagaId, Long orderId, String errorCode, String failureReason) {
+    public static SagaProcessResult fail(Long sagaId, String orderNo, String errorCode, String failureReason) {
         return SagaProcessResult.builder()
                 .sagaId(sagaId)
-                .orderId(orderId)
+                .orderNo(orderNo)
                 .status(SagaEventStatus.FAIL)
                 .errorCode(errorCode)
                 .failureReason(failureReason)
