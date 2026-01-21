@@ -1,11 +1,11 @@
 package com.example.common.product;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Getter
 @NoArgsConstructor
+@ToString
+@EqualsAndHashCode
 public class Item {
     private Long productVariantId;
     private Integer quantity;
