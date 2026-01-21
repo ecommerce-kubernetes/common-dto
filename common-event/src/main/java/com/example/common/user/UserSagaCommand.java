@@ -1,13 +1,13 @@
 package com.example.common.user;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Getter
 @NoArgsConstructor
+@ToString
+@EqualsAndHashCode
 public class UserSagaCommand {
     private UserCommandType type;
     private Long sagaId;

@@ -1,12 +1,11 @@
 package com.example.common.result;
 
-import lombok.AccessLevel;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Getter
 @NoArgsConstructor
+@ToString
+@EqualsAndHashCode
 public class SagaProcessResult {
     private Long sagaId;
     private String orderNo;

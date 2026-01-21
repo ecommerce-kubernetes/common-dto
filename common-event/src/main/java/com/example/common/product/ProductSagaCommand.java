@@ -1,14 +1,14 @@
 package com.example.common.product;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
 @Getter
 @NoArgsConstructor
+@ToString
+@EqualsAndHashCode
 public class ProductSagaCommand {
     private ProductCommandType type;
     private Long sagaId;

@@ -1,13 +1,13 @@
 package com.example.common.coupon;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Getter
 @NoArgsConstructor
+@ToString
+@EqualsAndHashCode
 public class CouponSagaCommand {
     private CouponCommandType type;
     private Long sagaId;
